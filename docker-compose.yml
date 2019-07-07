@@ -1,0 +1,10 @@
+version: '3'
+services:
+  blackarch:
+    build: .
+    cap_add:
+      - NET_ADMIN
+    stdin_open: true
+    tty: true
+    ports:
+      - "1962:1962"
